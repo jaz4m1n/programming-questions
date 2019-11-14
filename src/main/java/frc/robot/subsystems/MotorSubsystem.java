@@ -23,7 +23,6 @@ public class MotorSubsystem extends Subsystem {
   /**
    * Task 2
    * Flip the back and the front motor controllers (Make the back the front, and vice versa)
-   * (look at RobotMap.java line 24 for the answers)
    */
 
   /** The Spark motor controller for the front left side of the robot. */
