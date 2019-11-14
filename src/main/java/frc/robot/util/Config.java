@@ -2,6 +2,7 @@ package frc.robot.util;
 
 import frc.robot.util.controls.ports.joysticks.Joystick;
 import frc.robot.util.controls.ports.joysticks.LeftJoystick;
+import frc.robot.util.controls.ports.joysticks.RightJoystick;
 import io.github.cdimascio.dotenv.Dotenv;
 
 /**
@@ -19,4 +20,5 @@ public final class Config {
 
   /** Which joystick from the controller should be used for driving. */
   public static final Joystick preferredDrivingJoystick = new LeftJoystick();
+  public static final Joystick alternateDrivingJoystick = new RightJoystick();
 }
