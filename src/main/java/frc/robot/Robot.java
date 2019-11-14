@@ -42,7 +42,7 @@ public class Robot extends TimedRobot {
   public void robotInit() {
     System.out.println("Hello from " + Config.id);
 
-    chooser.setDefaultOption("Default Auto", new MoveDoubleSolenoid(pneumaticsSubsystem.solenoid, DoubleSolenoid.Value.kForward));
+    chooser.setDefaultOption("Default Auto", new MoveDoubleSolenoid(pneumaticsSubsystem.solenoidOne, DoubleSolenoid.Value.kForward));
 
     // chooser.addOption("My Auto", new MyAutoCommand());
     SmartDashboard.putData("Auto mode", chooser);

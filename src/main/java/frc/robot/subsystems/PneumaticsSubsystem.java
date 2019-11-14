@@ -16,11 +16,25 @@ import frc.robot.RobotMap;
  */
 public class PneumaticsSubsystem extends Subsystem {
   /** The solenoid. */
-  public final DoubleSolenoid solenoid = new DoubleSolenoid(
-    RobotMap.doubleSolenoidForwardChannel,
-    RobotMap.doubleSolenoidReverseChannel
+  /**
+   * Task 3
+   * Add another solenoid with ports 1 and 2
+   */
+  /**
+   * Reasoning
+   * Since we need another solenoid, and we only have one in this file, we should rename the existing solenoid to differentiate it better from our new one
+   * We should also update the old variable names to work with the new variable name
+   * Cont. on RobotMap.java line 84
+   * 
+   */
+  public final DoubleSolenoid solenoidOne = new DoubleSolenoid(
+    RobotMap.doubleSolenoidOneForwardChannel,
+    RobotMap.doubleSolenoidOneReverseChannel
   );
-
+  public final DoubleSolenoid solenoidTwo = new DoubleSolenoid(
+    RobotMap.doubleSolenoidTwoForwardChannel, 
+    RobotMap.doubleSolenoidTwoReverseChannel
+    );
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
   @Override

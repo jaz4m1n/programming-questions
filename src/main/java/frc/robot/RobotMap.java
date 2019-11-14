@@ -76,9 +76,19 @@ public class RobotMap {
   /** Controller port. */
   public final static int controllerPort = 0;
 
-  /** The PCM channel to move the double solenoid in the forward direction. */
-  public final static int doubleSolenoidForwardChannel = 8;
+  /** The PCM channel to move the first double solenoid in the forward direction. */
+  public final static int doubleSolenoidOneForwardChannel = 8;
 
-  /** The PCM channel to move the double solenoid in the reverse direction. */
-  public final static int doubleSolenoidReverseChannel = 9;
+  /** The PCM channel to move the first double solenoid in the reverse direction. */
+  public final static int doubleSolenoidOneReverseChannel = 9;
+ /** 
+  * Reasoning cont.
+  * We also want to make new RobotMap entries for easily changing the ports in the future
+  * Therefore, we make new variables, and rename the old variables to conform with the changes
+  */
+  /** The PCM channel to move the first double solenoid in the reverse direction. */
+  public final static int doubleSolenoidTwoForwardChannel = 1;
+  
+  /** The PCM channel to move the first double solenoid in the reverse direction. */
+  public final static int doubleSolenoidTwoReverseChannel = 2;
 }
