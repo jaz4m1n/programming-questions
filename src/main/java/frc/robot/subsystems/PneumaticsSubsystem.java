@@ -20,13 +20,7 @@ public class PneumaticsSubsystem extends Subsystem {
    * Task 3
    * Add another solenoid with ports 1 and 2
    */
-  /**
-   * Reasoning
-   * Since we need another solenoid, and we only have one in this file, we should rename the existing solenoid to differentiate it better from our new one
-   * We should also update the old variable names to work with the new variable name
-   * Cont. on RobotMap.java line 84
-   * 
-   */
+  
   public final DoubleSolenoid solenoidOne = new DoubleSolenoid(
     RobotMap.doubleSolenoidOneForwardChannel,
     RobotMap.doubleSolenoidOneReverseChannel

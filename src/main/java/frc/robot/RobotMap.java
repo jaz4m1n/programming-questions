@@ -21,45 +21,7 @@ public class RobotMap {
   // number and the module. For example you with a rangefinder:
   // public static int rangefinderPort = 1;
   // public static int rangefinderModule = 1;
-  /**
-   * Reasoning as to why this works
-   * When we look at the front of the robot, we look at it like this.
-   * Normal Ports
-   * -----------------
-   *      Front 
-   *  ______________
-   * |   |      |   | 
-   * | 1 |      | 2 |
-   * |___|      |___|
-   * |              |
-   * |              |
-   * |              | 
-   * |____       ___|
-   * |   |      |   |
-   * | 3 |      | 4 |
-   * |___|______|___|
-   *       Back
-   * 
-   * When we rotate the robot 180 degrees, as you can see, port 4 becomes the front left port, and port 3 becomes the front right port
-   * Therefore, the ports go as such
-   * 
-   * Inverted Ports
-   * -----------------
-   *      Front       
-   *  ______________
-   * |   |      |   | 
-   * | 4 |      | 3 |
-   * |___|      |___|
-   * |              |
-   * |              |
-   * |              | 
-   * |____       ___|
-   * |   |      |   |
-   * | 2 |      | 1 |
-   * |___|______|___|
-   *       Back      
-   */
-
+ 
 
   /** The port for the Spark motor controller on the front left. */
   public final static int frontLeftSparkPort = 4;
@@ -81,11 +43,7 @@ public class RobotMap {
 
   /** The PCM channel to move the first double solenoid in the reverse direction. */
   public final static int doubleSolenoidOneReverseChannel = 9;
- /** 
-  * Reasoning cont.
-  * We also want to make new RobotMap entries for easily changing the ports in the future
-  * Therefore, we make new variables, and rename the old variables to conform with the changes
-  */
+
   /** The PCM channel to move the first double solenoid in the reverse direction. */
   public final static int doubleSolenoidTwoForwardChannel = 1;
   
