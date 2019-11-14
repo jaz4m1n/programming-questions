@@ -1,5 +1,5 @@
-<u>Programming Question</u> Answer Key
+<u>Programming Question</u> Number 2
 =====
 
-This **by no means** is the only way to do this, so don't just copy.  
-Use this as a guide rather than a key (even though it's called a key)
+The next task is a little bit harder. This time, flip the front and the back of the robot, so that when you press forward, you drive in "reverse"  
+*Hint: look at MotorSubsystem.java and RobotMap.java*
