@@ -1,5 +1,5 @@
-<u>Programming Question</u> Answer Key
+<u>Programming Question</u> Number 3
 =====
 
-This **by no means** is the only way to do this, so don't just copy.  
-Use this as a guide rather than a key (even though it's called a key)
+This one is a little bit more difficult than the last. Now you have to add a new solenoid, with ports 1 and 2 as forward and backwards ports respectively.  
+*Hint: look at PneumaticsSubsystem.java and RobotMap.java (remember that these aren't necessarily the only files that you have to change)*
