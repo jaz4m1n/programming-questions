@@ -27,14 +27,10 @@ public class PneumaticsSubsystem extends Subsystem {
    * Cont. on RobotMap.java line 84
    * 
    */
-  public final DoubleSolenoid solenoidOne = new DoubleSolenoid(
-    RobotMap.doubleSolenoidOneForwardChannel,
-    RobotMap.doubleSolenoidOneReverseChannel
+  public final DoubleSolenoid solenoid = new DoubleSolenoid(
+    RobotMap.doubleSolenoidForwardChannel,
+    RobotMap.doubleSolenoidReverseChannel
   );
-  public final DoubleSolenoid solenoidTwo = new DoubleSolenoid(
-    RobotMap.doubleSolenoidTwoForwardChannel, 
-    RobotMap.doubleSolenoidTwoReverseChannel
-    );
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
   @Override

@@ -52,8 +52,8 @@ public final class Controls {
   private final JoystickButton bButton = new JoystickButton(driveJoystick, Buttons.b);
 
   public Controls() {
-    bButton.whenPressed(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoidOne, Value.kForward));
-    bButton.whenReleased(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoidOne, Value.kReverse));
+    bButton.whenPressed(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kForward));
+    bButton.whenReleased(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kReverse));
   }
 
   /**
