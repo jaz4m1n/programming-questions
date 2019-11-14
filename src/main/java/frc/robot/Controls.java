@@ -45,10 +45,7 @@ public final class Controls {
    * Task 1 
    * Change actuating (moving) double solenoid from A button to B button
    */
-  /**
-   * Reasoning as to why this works
-   * Since we already have the joystick ports mapped, the change is a matter of just replacing the instances of aButton and Buttons.a with bButton and Buttons.b, respectively
-   */
+
   private final JoystickButton bButton = new JoystickButton(driveJoystick, Buttons.b);
 
   public Controls() {
