@@ -19,6 +19,13 @@ import frc.robot.util.ShuffleboardUtil;
  * Makes robot go zoom.
  */
 public class MotorSubsystem extends Subsystem {
+
+  /**
+   * Task 2
+   * Flip the back and the front motor controllers (Make the back the front, and vice versa)
+   * (look at RobotMap.java for the answers)
+   */
+
   /** The Spark motor controller for the front left side of the robot. */
   private final Spark frontLeft = new Spark(RobotMap.frontLeftSparkPort);
 
