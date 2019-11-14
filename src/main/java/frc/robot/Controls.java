@@ -41,7 +41,8 @@ public final class Controls {
   // until it is finished as determined by it's isFinished method.
   // button.whenReleased(new ExampleCommand());
   public static final Joystick driveJoystick = new Joystick(RobotMap.controllerPort);
-  /** Task 1 
+  /** 
+   * Task 1 
    * Change actuating (moving) double solenoid from A button to B button
    */
   private final JoystickButton bButton = new JoystickButton(driveJoystick, Buttons.b);
