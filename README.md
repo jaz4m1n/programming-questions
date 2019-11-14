@@ -1,5 +1,5 @@
-<u>Programming Question</u> Answer Key
+<u>Programming Question</u> Number 1
 =====
 
-This **by no means** is the only way to do this, so don't just copy.  
-Use this as a guide rather than a key (even though it's called a key)
+Your first task is pretty simple. Change the button that activates the solenoid from the a button to the b button   
+*Hint: Go to Controls.java*
