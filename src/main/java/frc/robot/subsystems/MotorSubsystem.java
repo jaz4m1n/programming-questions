@@ -7,7 +7,7 @@
 package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.drive.MecanumDrive;
+import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.shuffleboard.BuiltInWidgets;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
@@ -37,24 +37,22 @@ public class MotorSubsystem extends Subsystem {
 
   /** The Spark motor controller for the back right side of the robot. */
   private final Spark backRight = new Spark(RobotMap.backRightSparkPort);
+   
+  /** Speed controller group for the motor controllers on the left. */
+   private final SpeedControllerGroup leftMotorControllers = new SpeedControllerGroup(frontLeft, backLeft);
+
+   /** Speed controller group for the motor controllers on the right. */
+   private final SpeedControllerGroup rightMotorControllers = new SpeedControllerGroup(frontRight, backRight);
 
   /**
-   * The differential mecanum for the motors.
+   * The mecanum for the motors.
    * This is where most of the driving action is performed.
    */
   /**
    * Task 4
    * Change the differential drivetrain to a mecanum drivetrain
    */
-  /**
-   * Reasoning
-   * First, we have to import MecanumDrive from WPILib
-   * Then we can remove the motor controller groups
-   * Next, we replace the DifferentialDrive with MecanumDrive
-   *    We have to make sure that we put the motor controllers in the right spots (frontLeft, backLeft, frontRight, backRight)
-   * Cont on Robot.java line 116
-   */
-  public final MecanumDrive drive = new MecanumDrive(frontLeft, backLeft, frontRight, backRight);
+  public final DifferentialDrive drive = new DifferentialDrive(leftMotorControllers, rightMotorControllers);
 
   public MotorSubsystem() {
     ShuffleboardUtil
@@ -62,7 +60,7 @@ public class MotorSubsystem extends Subsystem {
         .add("Differential Drive Train", drive)
         .withSize(4, 2)
         .withPosition(0, 0)
-        .withWidget(BuiltInWidgets.kMecanumDrive);
+        .withWidget(BuiltInWidgets.kDifferentialDrive);
   }
 
   // Put methods for controlling this subsystem

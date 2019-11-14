@@ -113,20 +113,13 @@ public class Robot extends TimedRobot {
   @Override
   public void teleopPeriodic() {
     Scheduler.getInstance().run();
-    /**
-     * Reasoning cont.
-     * We have to use a different drive system for driving mecanums (this is what driveCartesian means)
-     * This means that we first have to make a z axis for the robot to be able to rotate (since the y axis is now for strafing)
-     * We now have to use the other joystick's axis, since we've ran out of axes to use on our first joystick
-     * 
-     */
+ 
     final double x = Controls.driveJoystick.getRawAxis(Config.preferredDrivingJoystick.xAxis);
     final double y = Controls.driveJoystick.getRawAxis(Config.preferredDrivingJoystick.yAxis);
-    final double z = Controls.driveJoystick.getRawAxis(Config.alternateDrivingJoystick.xAxis);
 
     shuffleBoardUtil.logJoystickValues(x, y);
 
-    motorSubsystem.drive.driveCartesian(x, y, z);
+    motorSubsystem.drive.arcadeDrive(Controls.scale(y), Controls.scale(x), false);
   }
 
   @Override
