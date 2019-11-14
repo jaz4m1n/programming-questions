@@ -1,6 +1,5 @@
-# T-Shirt Cannon
+<u>Programming Question</u> Answer Key
+=====
 
-[![Build Status](https://github.com/blazingbulldogs/tshirt-cannon/workflows/CI/badge.svg)](https://github.com/blazingbulldogs/tshirt-cannon/actions)
-
-T-Shirt cannon robot.
-Built with WPILib.
+This **by no means** is the only way to do this, so don't just copy.  
+Use this as a guide rather than a key (even though it's called a key)
