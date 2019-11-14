@@ -1,5 +1,5 @@
-<u>Programming Question</u> Answer Key
+<u>Programming Question</u> Number 4
 =====
 
-This **by no means** is the only way to do this, so don't just copy.  
-Use this as a guide rather than a key (even though it's called a key)
+This one is the most difficult of the 4 tasks. You have to change the robot from Differential Drive to Mecanum Drive.
+*Hint: Look at MotorSubsystem.java, and Robot.java. Also remember that it's driveCartesian, and not cartesianDrive.*
