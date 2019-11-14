@@ -45,15 +45,12 @@ public final class Controls {
    * Task 1 
    * Change actuating (moving) double solenoid from A button to B button
    */
-  /**
-   * Reasoning as to why this works
-   * Since we already have the joystick ports mapped, the change is a matter of just replacing the instances of aButton and Buttons.a with bButton and Buttons.b, respectively
-   */
-  private final JoystickButton bButton = new JoystickButton(driveJoystick, Buttons.b);
+ 
+  private final JoystickButton aButton = new JoystickButton(driveJoystick, Buttons.a);
 
   public Controls() {
-    bButton.whenPressed(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kForward));
-    bButton.whenReleased(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kReverse));
+    aButton.whenPressed(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kForward));
+    aButton.whenReleased(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kReverse));
   }
 
   /**
@@ -68,6 +65,6 @@ public final class Controls {
    * Disable event listeners for inputs when the program is shutting down.
    */
   public void close() {
-    this.bButton.close();
+    this.aButton.close();
   }
 }
