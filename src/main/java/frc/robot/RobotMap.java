@@ -23,16 +23,16 @@ public class RobotMap {
   // public static int rangefinderModule = 1;
 
   /** The port for the Spark motor controller on the front left. */
-  public final static int frontLeftSparkPort = 4;
+  public final static int backLeftSparkPort = 4;
 
   /** The port for the Spark motor controller on the front right. */
-  public final static int frontRightSparkPort = 3;
+  public final static int backRightSparkPort = 3;
 
   /** The port for the Spark motor controller on the back left. */
-  public final static int backLeftSparkPort = 2;
+  public final static int frontLeftSparkPort = 2;
 
   /** The port for the Spark motor controller on the back right. */
-  public final static int backRightSparkPort = 1;
+  public final static int frontRightSparkPort = 1;
 
   /** Controller port. */
   public final static int controllerPort = 0;
