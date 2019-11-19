@@ -46,11 +46,11 @@ public final class Controls {
    * Change actuating (moving) double solenoid from A button to B button
    */
  
-  private final JoystickButton aButton = new JoystickButton(driveJoystick, Buttons.a);
+  private final JoystickButton aButton = new JoystickButton(driveJoystick, Buttons.b);
 
   public Controls() {
-    aButton.whenPressed(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kForward));
-    aButton.whenReleased(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kReverse));
+    bButton.whenPressed(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kForward));
+    bButton.whenReleased(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kReverse));
   }
 
   /**
@@ -65,6 +65,6 @@ public final class Controls {
    * Disable event listeners for inputs when the program is shutting down.
    */
   public void close() {
-    this.aButton.close();
+    this.bButton.close();
   }
 }
