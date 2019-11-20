@@ -24,6 +24,10 @@ public class PneumaticsSubsystem extends Subsystem {
     RobotMap.doubleSolenoidForwardChannel,
     RobotMap.doubleSolenoidReverseChannel
   );
+     public final DoubleSolenoid domino = new DoubleSolenoid(
+    RobotMap.doubleDominoForwardChannel,
+    RobotMap.doubleDominoReverseChannel
+ );
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
   @Override
